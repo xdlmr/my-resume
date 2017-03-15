@@ -23,18 +23,18 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-	.home-main
-	    padding:40px 0 0 0
+	.home
 	    display:flex
 	    align-items: center
 	    flex-direction: column
-	    font-size: 1.3vw
 	    line-height: 1.15
+	    height:100vh
 	    .home-avatar-img
 		    height:38vh
 		    display:flex
 		    display: -webkit-flex
 		    align-items: center
+		    justify-content:center
 		    .avatar-img	      
 		      height:30vh
 		      box-sizing: border-box
@@ -46,8 +46,6 @@
 			display: -webkit-flex
 			flex-direction: column
 			align-items: center
-			justify-content: center
-			font-size: 1.3vw
 			line-height: 1.5
 			.my-descri
 				font-size:1.4em

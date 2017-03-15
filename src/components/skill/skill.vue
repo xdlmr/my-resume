@@ -44,6 +44,18 @@
 		.litlemodule
 			padding-bottom:80px	
 			.item
-				width:20em !important
-				height:6em			
+				width:40em !important
+				min-height:10em	!important
+	@media only screen and (max-device-width :2260px) and (-webkit-min-device-pixel-ratio : 2.5)
+		#skill .litlemodule
+			margin-left:0px
+			.item
+				width:100% !important
+				min-height:10em	!important
+	@media  screen and (max-width:960px) and (min-width:480px)
+		#skill .litlemodule
+			margin-left:0px
+			.item
+				width:100% !important
+				min-height:10em	!important		
 </style>

@@ -33,31 +33,28 @@
 		margin-left:7em
 		flex: auto
 		.item
-			font-size:2.4em
-			width: 13em
-			height:4.5em
+			min-width: 30%
 			display:flex
 			flex-direction:row
-			align-items:cneter
-			margin-bottom:1em
-			margin-left:1em
+			align-items:center
+			margin-bottom:2em
+			padding-right:1em
 			.item-icon
-				width:3.5em
-				height:3.5em
+				width:6.3em
 				display:flex
 				align-items:center
 				justify-content:cneter
 				.iconfont
-					font-size:3.5em
+					font-size:6.3em
 			.item-info
 				margin-left: 1em
 				height:100%
-				width:60%
+				width:85%
 				.info-title
-					font-size:1em
+					font-size:1.8em
 					color:#1e90ff
 				.info-desc
-					font-size:0.9em
+					font-size:1.6em
 					color:#fff
 					margin-top:0.2em
 </style>

@@ -42,16 +42,17 @@
 <style lang="stylus" rel="stylesheet/stylus">
 	.header
 	  position:fixed
-	  background:#000
+	  background:rgba(0,0,0,.8)
 	  bottom:0px
 	  width:400px
 	  left:50%
 	  margin-left:-200px
-	  padding:10px 0
+	  padding:10px 20px
 	  text-align:center
-	  border-radius:5px
+	  border-radius:5px 5px 0 0
 	  .tab-item
 	    display:inline-block
+	    width:50px
 	    .icon
 	      font-size:50px
 	      color:#fff

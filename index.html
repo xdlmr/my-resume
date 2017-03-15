@@ -3,10 +3,148 @@
   <head>
     <meta charset="utf-8">
     <title>resume</title>
-      
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">    
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/reset.css">
-    
     <link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
+    <style type="text/css">
+    .main-timeline{
+        position: relative;
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -ms-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+    }
+    .main-timeline:before{
+        content: "";
+        width: 3px;
+        height: 100%;
+        background: #1abc9c;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .main-timeline .timeline{
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .main-timeline .timeline:before,
+    .main-timeline .timeline:after{
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    .main-timeline .timeline-icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #1abc9c;
+        overflow: hidden;
+        margin-left: -23px;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        text-align: center;
+    }
+    .main-timeline .timeline-icon i{
+        font-size: 30px;
+        line-height: 50px;
+        color: #fff;
+    }
+    .main-timeline .timeline-content{
+        width: 95%;
+        padding: 20px;
+        margin-left:50px;
+        border-radius: 5px;
+        background: #fff;
+        -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .main-timeline .timeline-content:before{
+           content: "";
+            border-right: 7px solid #1abc9c;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            position: absolute;
+            left: 43px;
+            top: 21px;
+    }
+    .main-timeline .title{
+        font-size: 30px;
+        font-weight: 300;
+        color: #fff;
+        padding: 10px;
+        background: #1abc9c;
+        border-radius: 3px 3px 0 0;
+        margin: -20px -20px 10px;
+    }
+    .main-timeline .description{
+        font-size: 16px;
+        color: #726f77;
+        line-height: 25px;
+    }
+    .main-timeline .timeline-content.right{
+        float: right;
+    }
+    .main-timeline .timeline-content.right:before{
+        content: "";
+        right: 45%;
+        left: inherit;
+        border-left: 0;
+        border-right: 7px solid #1abc9c;
+    }
+    @media only screen and (max-width: 990px){
+        .main-timeline .title{
+            font-size: 25px;
+        }
+        .main-timeline .timeline-content::before{
+            top: 16px;
+        }
+    }
+    @media only screen and (max-width: 767px){
+        .main-timeline{ margin-left: 20px; }
+        .main-timeline:before{ left: 0; }
+        .main-timeline .timeline-content{
+            width: 90%;
+            float: right;
+        }
+        .main-timeline .timeline-content:before,
+        .main-timeline .timeline-content.right:before{
+            left: 10%;
+            right: inherit;
+            margin-left: -6px;
+            border-left: 0;
+            border-right: 7px solid #1abc9c;
+        }
+        .main-timeline .timeline-icon{
+            left: 0;
+        }
+    }
+    @media only screen and (max-width: 479px){
+        .main-timeline .timeline-content{
+            width: 85%;
+        }
+        .main-timeline .timeline-content:before,
+        .main-timeline .timeline-content.right:before{
+            left: 15%;
+        }
+        .main-timeline .title{
+            font-size: 20px;
+        }
+        .main-timeline .timeline-content:before{
+            top: 13px;
+        }
+    }
+  </style>
   </head>
   <body>
     <div id="app"></div>

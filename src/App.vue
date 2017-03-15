@@ -1,7 +1,9 @@
 <template>
-  <div class="container">
+  <div class="mycontainer">
         <div class="router-content">
-            <router-view></router-view>
+            <transition name="slide-fade">
+               <router-view></router-view>
+            </transition>
         </div>
         <v-header></v-header>
   </div>
@@ -19,4 +21,15 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   @import './common/stylus/index.styl'
+  .slide-fade-enter-active 
+    transition: all .8s ease;
+
+  .slide-fade-leave-active 
+    transition: all .8s ease;
+
+  .slide-fade-enter, .slide-fade-leave-active
+    transform: translateX(10px);
+    opacity: 0;
+  .router-content
+    min-height:98vh
 </style>
